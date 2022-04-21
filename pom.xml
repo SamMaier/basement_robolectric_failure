@@ -1,0 +1,44 @@
+<project >
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>groupId</groupId>
+  <artifactId>artifactid</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <repositories>
+        <repository>
+            <id>google</id>
+            <url>https://maven.google.com</url>
+        </repository>
+  </repositories>
+
+  <dependencies>
+    <dependency>
+        <groupId>com.google.android.gms</groupId>
+        <artifactId>play-services-basement</artifactId>
+        <version>18.0.0</version>
+        <type>aar</type>
+    </dependency>
+    <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.12</version>
+    </dependency>
+    <dependency>
+        <groupId>org.robolectric</groupId>
+        <artifactId>robolectric</artifactId>
+        <version>4.7.3</version>
+        <exclusions>
+            <exclusion>
+                <groupId>androidx.test</groupId>
+                <artifactId>monitor</artifactId>
+            </exclusion>
+        </exclusions>
+    </dependency>
+    <dependency>
+        <groupId>org.robolectric</groupId>
+        <artifactId>shadows-playservices</artifactId>
+        <version>4.8-alpha-1</version>
+    </dependency>
+  </dependencies>
+</project>
