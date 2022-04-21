@@ -16,7 +16,7 @@
     <dependency>
         <groupId>com.google.android.gms</groupId>
         <artifactId>play-services-basement</artifactId>
-        <version>18.0.0</version>
+        <version>17.6.0</version>
         <type>aar</type>
     </dependency>
     <dependency>
